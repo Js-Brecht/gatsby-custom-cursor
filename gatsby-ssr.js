@@ -11,7 +11,7 @@ export const onRenderBody = ({ setPreBodyComponents, setBodyAttributes }) => {
     setBodyAttributes({
         style: {
             cursor: 'none',
-        }
+        },
     });
     setPreBodyComponents([
         <div   
@@ -23,6 +23,6 @@ export const onRenderBody = ({ setPreBodyComponents, setBodyAttributes }) => {
             id='cursor-canvas'
             key='cursor-canvas'
             className='cursor cursor--canvas'
-        />
+        />,
     ]);
-}
+};
