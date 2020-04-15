@@ -1,0 +1,40 @@
+@import "../../../styles/global.scss";
+
+.link {
+  display: flex;
+  width: 75px;
+  height: 75px;
+  margin: 0 5px;
+  justify-content: center;
+  align-items: center;
+}
+.settings-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+.settings-icon__line {
+  stroke: $fg-color;
+  stroke-width: 5px;
+  transition: all 0.2s ease 0.05s;
+}
+.settings-icon__rect {
+  stroke: $fg-color;
+  fill: $bg-color;
+  stroke-width: 5px;
+  transition: all 0.2s ease 0.05s;
+}
+.link:hover .settings-icon__line,
+.link:hover .settings-icon__rect {
+  stroke: $link-color;
+  transition: all 0.2s ease 0.05s;
+}
+.link:hover .settings-icon__group--1 .settings-icon__rect {
+  transform: translateY(20px);
+}
+.link:hover .settings-icon__group--2 .settings-icon__rect {
+  transform: translateY(-20px);
+}
+.link:hover .settings-icon__group--3 .settings-icon__rect {
+  transform: translateY(25px);
+}
